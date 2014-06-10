@@ -381,8 +381,11 @@
 
 
 	#logo{
-		position: relative;
+		position: absolute;
 		text-align: center;
-		bottom: 30em;
+		width:100%;
+		margin-left:auto;
+		margin-right:auto;
+		bottom: 0em;
 		vertical-align: middle;
 	}
