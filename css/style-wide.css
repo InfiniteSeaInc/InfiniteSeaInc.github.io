@@ -21,3 +21,13 @@
 		background-size: 1300px auto;
 		width: 3900px;
 	}
+
+	#logo{
+		font-family:"Helvetica CY", sans-serif;
+		font-size:420px;
+		font-weight:900;
+		position: relative;
+		text-align: center;
+		bottom: 200px;
+		vertical-align: middle;
+	}
