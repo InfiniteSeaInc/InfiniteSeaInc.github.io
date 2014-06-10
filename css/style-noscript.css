@@ -25,12 +25,3 @@
 		#header nav li {
 			opacity: 1;
 		}
-
-#logo{
-	font-family:"Helvetica CY", sans-serif;
-	font-weight:900;
-	position: relative;
-	text-align: center;
-	bottom: 200px;
-	vertical-align: middle;
-}
