@@ -381,11 +381,8 @@
 
 
 	#logo{
-		font-family:"Helvetica CY", sans-serif;
-		font-size:23em;
-		font-weight:900;
 		position: relative;
 		text-align: center;
-		bottom: 200px;
+		bottom: 30em;
 		vertical-align: middle;
 	}
