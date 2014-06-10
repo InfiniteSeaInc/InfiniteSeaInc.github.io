@@ -91,7 +91,7 @@
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
-		opacity: .9;
+		opacity: 1;
 		position: fixed;
 		top: 0;
 	}
@@ -124,7 +124,7 @@
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
-		height: 140px;
+		height: 10em;
 		left: 0;
 		opacity: 0;
 		position: fixed;
@@ -390,6 +390,6 @@
 		vertical-align: middle;
 	}
 	#logo img{
-
+		opacity: .23;
 		width:80%;
 	}
