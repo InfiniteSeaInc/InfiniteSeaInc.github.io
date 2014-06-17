@@ -35,26 +35,3 @@
 	#header p {
 		font-size: 1em;
 	}
-
-	#header nav {
-		font-size: 1em;
-	}
-
-		#header nav a:hover {
-			font-size: 1em;
-		}
-
-		#header nav a:active {
-			font-size: 1em;
-		}
-
-#logo{
-
-	bottom: 5em;
-
-}
-
-#logo img{
-
-	width:80%;
-}
