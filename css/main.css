@@ -9,8 +9,9 @@ body{
   header, footer{
     text-align:center;
   }
+
   header h1 {
-    font-size: 4.35em;
+    font-size: 3.35em;
     font-weight: 400;
     letter-spacing: -0.035em;
     margin-top:10px;
@@ -22,9 +23,15 @@ body{
     opacity: 0.5;
   }
 
+  section{
+    position:absolute;
+    bottom:0px;
+    height:600px;
+
+  }
+
   #ocean{
         background-image: url("images/ocean.jpg");
-        background-position: bottom left;
         background-repeat: repeat-x;
 
         height:500px;
@@ -45,12 +52,4 @@ body{
   @keyframes ocean {
        0% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
        100% { -webkit-transform: translate3d(-1250px,0,0); transform: translate3d(-1250px,0,0); }
-  }
-
-
-  footer{
-    background-color: #02232d;
-    letter-spacing: .35em;
-    padding:1em;
-
   }
