@@ -1,21 +1,21 @@
 body{
-    font-family:Helvetica;
-    color:#ffffff;
+    font-family: Helvetica;
+    color: #ffffff;
     background-color: #348cb2;
-    margin:0;
+    margin: 0;
     overflow: hidden;
   }
 
   header, footer{
-    text-align:center;
+    text-align: center;
   }
 
   header h1 {
     font-size: 3.35em;
     font-weight: 400;
     letter-spacing: -0.035em;
-    margin-top:10px;
-    margin-bottom:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   header p {
@@ -24,9 +24,9 @@ body{
   }
 
   section{
-    position:absolute;
-    bottom:0px;
-    height:600px;
+    position: absolute;
+    bottom: 0px;
+    height: 600px;
 
   }
 
