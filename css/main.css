@@ -1,0 +1,48 @@
+body{
+    font-family:Helvetica;
+    color:#ffffff;
+    background-color: #348cb2;
+    margin:0;
+    overflow: hidden;
+  }
+
+  header, footer{
+    text-align:center;
+  }
+  header h1 {
+    font-size: 4.35em;
+    font-weight: 400;
+    letter-spacing: -0.035em;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+
+  header p {
+    font-size: 1.25em;
+    opacity: 0.5;
+  }
+
+  #ocean{
+        background-image: url("images/ocean.jpg");
+        background-position: bottom left;
+        background-repeat: repeat-x;
+
+        height:500px;
+        backface-visibility: hidden;
+        animation: ocean 60s linear infinite;
+        transform: translate3d(0,0,0);
+        width: 200%;
+      }
+
+  @keyframes ocean {
+       0% { transform: translate3d(0,0,0); }
+       100% { transform: translate3d(-1250px,0,0); }
+  }
+
+
+  footer{
+    background-color: #02232d;
+    letter-spacing: .35em;
+    padding:1em;
+
+  }
