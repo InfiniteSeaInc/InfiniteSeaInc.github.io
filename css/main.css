@@ -1,12 +1,13 @@
-
-  body{
-    font-family: Helvetica;
-    color: #15273B;
-    background-color: #fff;
-    margin: 0;
-    padding:0;
-    background-size:100% auto;
-  }
+html, body {
+  font-family: Helvetica;
+  color: #15273B;
+  background-color: #fff;
+  height:100%;
+  width:100%;
+  position:relative;
+  margin:0;
+  padding:0;
+}
 
   header h1 {
     font-size: 3.35em;
@@ -30,33 +31,32 @@
     display: block;
     margin-left:auto;
     margin-right:auto;
-    width: 1500px;
-    height: 600px;
     overflow:hidden;
+    height: 600px;
+    width: 1250px;
 
   }
 
   .image {
     position: absolute;
-    width: 100%;
-
   }
 
-  .logo{
+  .logo:last-of-type {
     z-index: 1;
-
-    height:200%;
+    height: 500px;
+    width: 100%;
     background-image: url("images/logo-transparent.png");
     background-repeat: repeat-x;
-
+    background-size:cover;
+    background-position:center center;
   }
 
-  .ocean{
+  .ocean:first-of-type {
         z-index: 0;
         background-image: url("images/ocean.jpg");
         background-repeat: repeat-x;
+        height: 500px;
         width: 200%;
-        height:500px;
         -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
         -webkit-animation: ocean 60s linear infinite;
@@ -68,12 +68,12 @@
 
   @-webkit-keyframes ocean {
        0% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
-       100% { -webkit-transform: translate3d(-1250px,0,0); transform: translate3d(-1250px,0,0); }
+       100% { -webkit-transform: translate3d(-1200px,0,0); transform: translate3d(-1200px,0,0); }
   }
 
   @keyframes ocean {
        0% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
-       100% { -webkit-transform: translate3d(-1250px,0,0); transform: translate3d(-1250px,0,0); }
+       100% { -webkit-transform: translate3d(-1200px,0,0); transform: translate3d(-1200px,0,0); }
   }
 
 
