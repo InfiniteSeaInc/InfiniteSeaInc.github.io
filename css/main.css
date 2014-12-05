@@ -1,11 +1,9 @@
-html {
+html,body {
   background: white;
   overflow: hidden;
 
 }
-body{
 
-}
 
 header h1 {
   font-size: 3.35em;
