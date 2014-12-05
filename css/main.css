@@ -1,81 +1,81 @@
-html, body {
-  font-family: Helvetica;
-  color: #15273B;
-  background-color: #fff;
-  height:100%;
-  width:100%;
-  position:relative;
-  margin:0;
-  padding:0;
+html {
+  background: white;
+  overflow: hidden;
+
+}
+body{
+
 }
 
-  header h1 {
-    font-size: 3.35em;
-    font-weight: 400;
-    letter-spacing: -0.035em;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align:center;
+header h1 {
+  font-size: 3.35em;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align:center;
+}
+
+header p {
+  font-size: 1.25em;
+  opacity: 0.5;
+  text-align:center;
+}
+
+.contained {
+  z-index: 1;
+  margin-left:auto;
+  margin-right:auto;
+  width:500px;
+  height:500px;
+  overflow: hidden;
+
+}
+
+.logo{
+  height:500px;
+  width:100%;
+  z-index: 2;
+  position:absolute;
+  left:0;
+  top:0;
+
+}
+
+.ocean {
+  z-index: 1;
+  background-image: url("images/ocean.jpg");
+  background-repeat: repeat-x;
+  width:200%;
+  height:500px;
+  position:fixed;
+  left:0;
+  top:0;
+
+
+  background-position:center center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: ocean 60s linear infinite;
+  animation: ocean 60s linear infinite;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+
+}
+
+@-webkit-keyframes ocean {
+  0% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+  100% { -webkit-transform: translate3d(-1500px,0,0); transform: translate3d(-1500px,0,0); }
+}
+
+@keyframes ocean {
+  0% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+  100% { -webkit-transform: translate3d(-1500px,0,0); transform: translate3d(-1500px,0,0); }
+}
+
+  .container{
+    padding-bottom: 40px;
   }
-
-  header p {
-    font-size: 1.25em;
-    opacity: 0.5;
-    text-align:center;
-  }
-
-  .contained {
-    margin:0;
-    padding:0;
-    position: relative;
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    overflow:hidden;
-    height: 600px;
-    width: 1250px;
-
-  }
-
-  .image {
-    position: absolute;
-  }
-
-  .logo:last-of-type {
-    z-index: 1;
-    height: 500px;
-    width: 100%;
-    background-image: url("images/logo-transparent.png");
-    background-repeat: repeat-x;
-    background-size:cover;
-    background-position:center center;
-  }
-
-  .ocean:first-of-type {
-        z-index: 0;
-        background-image: url("images/ocean.jpg");
-        background-repeat: repeat-x;
-        height: 500px;
-        width: 200%;
-        -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-        -webkit-animation: ocean 60s linear infinite;
-                animation: ocean 60s linear infinite;
-        -webkit-transform: translate3d(0,0,0);
-                transform: translate3d(0,0,0);
-
-      }
-
-  @-webkit-keyframes ocean {
-       0% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
-       100% { -webkit-transform: translate3d(-1200px,0,0); transform: translate3d(-1200px,0,0); }
-  }
-
-  @keyframes ocean {
-       0% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
-       100% { -webkit-transform: translate3d(-1200px,0,0); transform: translate3d(-1200px,0,0); }
-  }
-
 
   .white {
     color: white;
