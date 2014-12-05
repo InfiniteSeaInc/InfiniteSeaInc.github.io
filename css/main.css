@@ -21,35 +21,11 @@ header p {
 }
 
 .contained {
-  z-index: 1;
-  margin-left:auto;
-  margin-right:auto;
-  width:500px;
-  height:500px;
-  overflow: hidden;
-
-}
-
-.logo{
-  height:500px;
-  width:100%;
-  z-index: 2;
-  position:absolute;
-  left:0;
-  top:0;
-
-}
-
-.ocean {
-  z-index: 1;
-  background-image: url("images/ocean.jpg");
-  background-repeat: repeat-x;
+  z-index: 0;
   width:200%;
   height:500px;
-  position:fixed;
-  left:0;
-  top:0;
-
+  background-image: url("images/ocean.jpg");
+  background-repeat: repeat-x;
 
   background-position:center center;
   -webkit-backface-visibility: hidden;
@@ -58,6 +34,22 @@ header p {
   animation: ocean 60s linear infinite;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+
+}
+
+.logo{
+  width:100%;
+  height:100%;
+  max-height:500px;
+  z-index: 1;
+  position:absolute;
+  left:0;
+  top:0;
+
+}
+
+.ocean {
+
 
 }
 
