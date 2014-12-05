@@ -72,6 +72,7 @@ header p {
 }
 
   .container{
+    z-index: 2;
     padding-bottom: 40px;
   }
 
