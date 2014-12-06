@@ -1,0 +1,135 @@
+html,body {
+  background: white;
+
+}
+
+header h1 {
+  font-size: 3.35em;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align:center;
+}
+
+header p {
+  font-size: 1.25em;
+  opacity: 0.5;
+  text-align:center;
+}
+
+.contained {
+  border: 5px solid red;
+  width:1500px;
+  height:500px;
+  overflow: hidden;
+  position:fixed;
+  top:0;
+}
+
+
+
+
+.ocean {
+  z-index: 0;
+  width:1500px;
+  height:500px;
+  margin-left:auto;
+  margin-right:auto;
+  background-image: url("images/ocean.jpg"), url("images/logo-transparent.png");
+  background-repeat: repeat-x, no-repeat;
+  position:fixed;
+  top:0;
+
+  background-position:center center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: ocean 60s linear infinite;
+  animation: ocean 60s linear infinite;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+
+}
+
+@-webkit-keyframes ocean {
+  0% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+  100% { -webkit-transform: translate3d(-1500px,0,0); transform: translate3d(-1500px,0,0); }
+}
+
+@keyframes ocean {
+  0% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+  100% { -webkit-transform: translate3d(-1500px,0,0); transform: translate3d(-1500px,0,0); }
+}
+
+  .container{
+    z-index: 2;
+    margin-top:500px;
+    padding-bottom: 40px;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .btn-lg {
+    font-size: 38px;
+    line-height: 1.33;
+    border-radius: 6px;
+  }
+
+  .box > .icon {
+    text-align: center;
+    position: relative;
+  }
+
+  .box > .icon > .image {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    border: 4px solid white;
+    line-height: 110px;
+    border-radius: 50%;
+    background: #BFFFC9;
+    vertical-align: middle;
+  }
+
+  .box > .icon:hover > .image {
+    border: 2px solid #ddd;
+  }
+
+  .box > .icon > .image > i {
+    font-size: 50px !important;
+    color: #fff !important;
+  }
+
+  .box > .icon:hover > .image > i {
+    color: white !important;
+  }
+
+  .box > .icon > .info {
+    margin-top: -24px;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid #e0e0e0;
+    padding: 15px 0 10px 0;
+  }
+
+  .box > .icon > .info > h3.title {
+    color: #222;
+    font-weight: 500;
+  }
+
+  .box > .icon > .info > p {
+    color: #666;
+    line-height: 1.5em;
+    margin: 20px;
+  }
+
+  .box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a {
+    color: #222;
+  }
+
+  .box .space {
+    height: 30px;
+  }
