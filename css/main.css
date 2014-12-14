@@ -32,6 +32,9 @@
     z-index: 2;
     padding-bottom: 40px;
   }
+  .info{
+    min-height: 200px;
+  }
 
   .white {
     color: white;
